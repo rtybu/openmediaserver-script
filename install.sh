@@ -191,7 +191,7 @@ echo "${omvCodename} :: ${version}"
 
 hostname="$(hostname --short)"
 domainname="$(hostname --domain)"
-tz="$(timedatectl show --property=Timezone Asia/Kolkata)"
+tz="Asia/Kolkata"
 
 regex='[a-zA-Z]([-a-zA-Z0-9]{0,61}[a-zA-Z0-9])'
 if [[ ! ${hostname} =~ ${regex} ]]; then
